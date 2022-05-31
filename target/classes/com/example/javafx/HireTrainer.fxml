@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="232.0" style="-fx-background-color: #206675;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" text="GMS" textFill="#dad2d2">
+                    <font>
+                        <Font name="Wingdings" size="33.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="16.0" layoutY="89.0" prefHeight="82.0" prefWidth="200.0" text="GYM" textFill="#dad2d2">
+                    <font>
+                        <Font name="Wingdings" size="33.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="16.0" layoutY="103.0" prefHeight="137.0" prefWidth="200.0" text="Management" textFill="#dad2d2">
+                    <font>
+                        <Font name="Wingdings" size="33.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="16.0" layoutY="147.0" prefHeight="137.0" prefWidth="200.0" text="SYSTEM" textFill="#dad2d2">
+                    <font>
+                        <Font name="Wingdings" size="33.0" />
+                    </font>
+                </Label>
+                <Line endX="147.0" layoutX="85.0" layoutY="64.0" startX="-85.0" stroke="#ebe5e5" />
+            </children></AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="631.0" prefWidth="831.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="259.0" layoutY="14.0" prefHeight="58.0" prefWidth="224.0" text="Hire Trainer" textFill="#206573">
+                    <font>
+                        <Font name="Webdings" size="33.0" />
+                    </font>
+                </Label>
+            <TableView fx:id="table_info" layoutX="18.0" layoutY="88.0" prefHeight="476.0" prefWidth="706.0">
+              <columns>
+                <TableColumn fx:id="col_name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="col_exp" prefWidth="75.0" text="Experience" />
+                  <TableColumn fx:id="col_fees" prefWidth="75.0" text="Fees" />
+                  <TableColumn fx:id="col_client" prefWidth="75.0" text="Clients" />
+                  <TableColumn fx:id="col_rating" prefWidth="75.0" text="Ratings" />
+                  <TableColumn fx:id="col_action" prefWidth="159.0" text="Action" />
+                  <TableColumn fx:id="col_consult" prefWidth="157.0" text="Action" />
+              </columns>
+            </TableView>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
